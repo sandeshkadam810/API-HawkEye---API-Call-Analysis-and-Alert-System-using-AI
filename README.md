@@ -22,7 +22,6 @@ Develop an AI-powered monitoring solution for a large-scale, distributed multi-A
 ## Technology Stack
 - **Python** (for analysis and ML models)
 - **Databases** (SQL/NoSQL for storing logs)
-- **AWS** (if cloud technology is required)
 - **ELK Stack (Elasticsearch, Logstash, Kibana)** (for log aggregation and visualization)
 - **Kafka** (for real-time streaming of logs)
 - **OpenTelemetry** (for distributed tracing and log collection)
