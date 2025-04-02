@@ -100,12 +100,19 @@ Barclays/
     │── otel-config.yaml
 ```
 ## UI Overview 
-![PHOTO-2025-04-02-21-19-41](https://github.com/user-attachments/assets/2c8e1439-41df-4922-af9a-55c961362d4f)
-![WhatsApp Image 2025-04-02 at 21 04 54](https://github.com/user-attachments/assets/547247f5-e8b0-4e5c-acd6-4a4a727e1f6e)
-![WhatsApp Image 2025-04-02 at 21 05 34](https://github.com/user-attachments/assets/7dcd6d68-2d56-4c53-800b-16c2ef4f1953)
-![WhatsApp Image 2025-04-02 at 21 05 53](https://github.com/user-attachments/assets/9d726fa4-4dc8-4167-949d-50d4103eda15)
-![WhatsApp Image 2025-04-02 at 21 06 12](https://github.com/user-attachments/assets/8c48f7cd-2922-4f8a-8462-206401c68576)
-![WhatsApp Image 2025-04-02 at 21 06 29](https://github.com/user-attachments/assets/e1b8806e-e897-464a-8d73-777fc1e98bcb)
+
+![Home Dashboard Sidebar](https://github.com/user-attachments/assets/75f17cb5-6859-4118-892c-67844936f4e5)
+
+![Environment Comparison](https://github.com/user-attachments/assets/bdd000a5-d67f-49f9-9c76-600cb66c213f)
+
+![API Performance Metrices](https://github.com/user-attachments/assets/bca08d4f-51d3-466f-bb1b-8759b5edc5ec)
+
+![Alert Configuration](https://github.com/user-attachments/assets/4b47d130-a862-4a74-87d0-4788074631e7)
+
+![Home Dashboard](https://github.com/user-attachments/assets/f7af8e51-f285-40c3-8e00-471bf0fc263d)
+
+
+![Anomaly Detection Center](https://github.com/user-attachments/assets/18a29297-8a75-402b-8b95-a29faaa7f80b)
 
 
 ## Setup & Execution
