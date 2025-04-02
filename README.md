@@ -99,6 +99,14 @@ Barclays/
 └── opentelemetry/  # OpenTelemetry configuration
     │── otel-config.yaml
 ```
+## UI Overview 
+![PHOTO-2025-04-02-21-19-41](https://github.com/user-attachments/assets/2c8e1439-41df-4922-af9a-55c961362d4f)
+![WhatsApp Image 2025-04-02 at 21 04 54](https://github.com/user-attachments/assets/547247f5-e8b0-4e5c-acd6-4a4a727e1f6e)
+![WhatsApp Image 2025-04-02 at 21 05 34](https://github.com/user-attachments/assets/7dcd6d68-2d56-4c53-800b-16c2ef4f1953)
+![WhatsApp Image 2025-04-02 at 21 05 53](https://github.com/user-attachments/assets/9d726fa4-4dc8-4167-949d-50d4103eda15)
+![WhatsApp Image 2025-04-02 at 21 06 12](https://github.com/user-attachments/assets/8c48f7cd-2922-4f8a-8462-206401c68576)
+![WhatsApp Image 2025-04-02 at 21 06 29](https://github.com/user-attachments/assets/e1b8806e-e897-464a-8d73-777fc1e98bcb)
+
 
 ## Setup & Execution
 1. **Build & Start Services:**
