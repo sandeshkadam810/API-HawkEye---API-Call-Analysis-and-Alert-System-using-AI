@@ -1,0 +1,29 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+processors:
+  batch:  # ✅ Add this to define the batch processor
+    timeout: 1s
+    send_batch_size: 1024
+
+exporters:
+  otlphttp:
+    endpoint: "http://logstash:5044"  # Send traces/logs to Logstash
+
+  debug:  # ✅ Replaced 'logging' with 'debug' as per your request
+    verbosity: detailed
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [otlphttp, debug]
+
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [debug]  # ✅ Ensure logs go to debug for visibility

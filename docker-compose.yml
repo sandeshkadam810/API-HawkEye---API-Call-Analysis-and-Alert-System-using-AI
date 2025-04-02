@@ -1,0 +1,66 @@
+
+services:
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.10.1
+    volumes:
+     - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    ports:
+    - "5044:5044"
+    depends_on:
+    - elasticsearch
+
+  aggregator:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - api-python
+      - api-js
+      - api-go
+
+  api-python:
+    build: ./api-python
+    ports:
+      - "5001:5001"
+    depends_on:
+      - otel-collector
+
+  api-js:
+    build: ./api-js
+    ports:
+      - "5002:5002"
+    depends_on:
+      - otel-collector
+
+  api-go:
+    build: ./api-go
+    ports:
+      - "5003:5003"
+    depends_on:
+      - otel-collector
+
+  otel-collector:
+    image: otel/opentelemetry-collector:latest
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel/config.yaml
+    command: [ "--config=/etc/otel/config.yaml" ]
+    ports:
+      - "4317:4317" # OTLP gRPC
+      - "55680:55680" # OTLP HTTP
+
+  
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.1
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch

@@ -1,0 +1,14 @@
+{
+    "name": "api-js",
+    "version": "1.0.0",
+    "description": "API service with OpenTelemetry tracing",
+    "main": "server.js",
+    "dependencies": {
+        "@opentelemetry/api": "",
+        "@opentelemetry/sdk-node": "",
+        "@opentelemetry/sdk-trace-node": "",
+        "@opentelemetry/sdk-trace-base": "",
+        "@opentelemetry/exporter-trace-otlp-grpc": "",
+        "express": ""
+    }
+}
